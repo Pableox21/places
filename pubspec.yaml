@@ -88,6 +88,14 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 
-fonts:
-  -family: Lato
-  fonts: assets/fonts/Lato-Regular.ttf
+  fonts:
+    - family: Lato
+      fonts:
+      - assets: assets/fonts/Lato-Regular.ttf
+
+  assets:
+    - assets/images/persona1.jpg
+    - assets/images/persona2.jpg
+    - assets/images/persona3.jpg
+    - assets/images/persona4.jpg
+    - assets/images/persona5.jpg
