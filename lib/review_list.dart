@@ -11,7 +11,7 @@ class ReviewList extends StatelessWidget {
         Review("assets/images/persona2.jpg","Maria Eugenia", "4 review - 2 photos", 3,"Nunca visite el lugar"),
         Review("assets/images/persona3.jpg","Lorena", "3 review - 2 photos", 5,"Me encanto") ,
         Review("assets/images/persona4.jpg","Luis", "8 review - 4 photos", 2,"quierp conocerlo"),
-        Review("assets/images/persona5.jpg","Pancrasio", "3 review - 4 photos", 3,"Hermoso lugar")
+        Review("assets/images/persona5.jpg","Vash", "3 review - 4 photos", 3,"Hermoso lugar")
       ],
     );
     return reviewList;
