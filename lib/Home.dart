@@ -5,6 +5,8 @@ import 'package:places/gradient_back.dart';
 import 'package:places/review.dart';
 import 'package:places/review_list.dart';
 
+import 'home_app_bar.dart';
+
 class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -36,17 +38,13 @@ class MyHome extends StatelessWidget {
       ],
     );
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-            "My Places"
-        ),
-      ),
-      body: Stack(
-        children: <Widget> [
-          GradientBack()
-        ],
-      )
-    );
+     return Scaffold(
+          body: Stack(
+            children: <Widget>[
+              listView,
+              HomeAppBar("Popular")
+            ],
+          ),
+        );
   }
 }
