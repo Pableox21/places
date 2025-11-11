@@ -9,12 +9,12 @@ class CardImageList extends StatelessWidget {
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
-          card("assets/images/uyuni.jpg"),
-          card("assets/images/copacabana.jpg"),
-          card("assets/images/incachaca.jpg"),
-          card("assets/images/samahipata.jpg"),
-          card("assets/images/coroico.jpg"),
-          card("assets/images/LagunaColorada.jpg"),
+          CardImage("assets/images/uyuni.jpg"),
+          CardImage("assets/images/copacabana.jpg"),
+          CardImage("assets/images/incachaca.jpg"),
+          CardImage("assets/images/samahipata.jpg"),
+          CardImage("assets/images/coroico.jpg"),
+          CardImage("assets/images/LagunaColorada.jpg"),
         ],
       ),
     );

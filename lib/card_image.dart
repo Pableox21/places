@@ -1,50 +1,51 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
+import 'package:places/fab_green.dart';
 
-import 'fab_green.dart';
+class CardImage extends StatelessWidget{
 
-class card extends StatelessWidget{
   String path;
-  card(this.path);
+
+  CardImage(this.path);
 
   @override
   Widget build(BuildContext context) {
+
     final card = Padding(
       padding: EdgeInsets.only(
-        top: 100,
-        bottom: 30,
-        right: 15
+          top: 100,
+          right: 15,
+          bottom: 30
       ),
       child: Container(
-          width: 200,
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage(
-                    path,
-                  ),
-                  fit: BoxFit.cover
+        width: 200,
+        decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage(
+                path,
               ),
-              shape: BoxShape.rectangle,
-              borderRadius: BorderRadius.all(Radius.circular(15)),
-              boxShadow: <BoxShadow>[
-                BoxShadow(
-                    color: Colors.black45,
-                    blurRadius: 15,
-                    offset: Offset(0, 10)
-                )
-              ]
-          )
+              fit: BoxFit.cover,
+            ),
+            shape: BoxShape.rectangle,
+            borderRadius: BorderRadius.all(Radius.circular(15)),
+            boxShadow: <BoxShadow> [
+              BoxShadow(
+                color: Colors.black45,
+                blurRadius: 15,
+                offset: Offset(0, 10),
+              )
+            ]
+        ),
       ),
     );
+
     final cardImage = Stack(
-      alignment: Alignment(0.7,0.95),
+      alignment: Alignment(0.7, 0.9),
       children: <Widget>[
         card,
         FabGreen()
       ],
     );
 
-    return card;
+    return cardImage;
   }
 }
